@@ -1,0 +1,22 @@
+FINAL ORGANIZER DEMONSTRATION
+
+1. Main page:
+   sudo systemctl status nginx
+   curl http://10.10.145.207
+
+2. Second computer:
+   From another physical computer on the same network:
+   curl http://10.10.145.207
+
+3. Remote modification:
+   Modify /var/www/html/index.html from the second computer.
+   Then:
+   curl http://10.10.145.207
+   Show the changed text.
+
+4. Second port:
+   curl http://10.10.145.207:8002
+
+5. HTTPS:
+   curl -k https://10.10.145.207
+   Optionally open https://10.10.145.207 in a browser.
